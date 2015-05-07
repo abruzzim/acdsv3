@@ -68,5 +68,5 @@ test:
 production:
   <<: *default
   database: acds_production
-  username: acds
+  username: deploy
   password: <%= ENV['ACDS_DATABASE_PASSWORD'] %>

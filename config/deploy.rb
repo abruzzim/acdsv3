@@ -39,7 +39,7 @@ set :log_level, :debug
 
 namespace :deploy do
 
-  desc 'Restart Passenger application server'
+	desc 'Restart Passenger application server'
 	task :restart do
 		puts "%DEPLOY-I-TRACE, config/deploy.rb deploy:restart called."
 		on roles(:web), in: :sequence, wait: 5 do
