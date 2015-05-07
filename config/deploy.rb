@@ -5,6 +5,7 @@ lock '3.4.0'
 
 set :application, 'acds'
 set :repo_url, 'git@github.com:abruzzim/acdsv3.git'
+set :rbenv_ruby, '2.2.0'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
