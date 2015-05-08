@@ -1,0 +1,81 @@
+/*
+  Include the Bootstrap CSS framework
+*/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/*
+  Sass Variables and Mixins
+*/
+
+$white:             #fff;
+$dark-gray:         #222;
+$gray:              #555;
+$light_gray:        #777;
+$medium-light-gray: #eaeaea;
+
+// Allows a group of CSS rules to be packaged 
+// up and used for multiple elements.
+@mixin box_sizing {
+	// The width and height properties include 
+	// the padding and border, but not the margin.
+	-moz-box-sizing:    border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing:         border-box;
+}
+
+/*
+  Universal Styling
+*/
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	padding-top: 90px;
+}
+
+section {
+	overflow: auto;
+}
+
+textarea {
+	resize: vertical;
+}
+
+.center {
+	text-align: center;
+	h1 {
+		margin-bottom: 10px;
+	}
+}
+
+/*
+  Typography
+*/
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1;
+}
+
+h1 {
+	font-size: 3em;
+	letter-spacing: -2px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.2em;
+	letter-spacing: -1px;
+	margin-bottom: 30px;
+	text-align: center;
+	font-weight: normal;
+	color: $light_gray;
+}
+
+p {
+	font-size: 1.1em;
+	line-height: 1.7em;
+}
