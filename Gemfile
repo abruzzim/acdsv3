@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use postgresql as the database for Active Record
@@ -23,27 +22,27 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-
+# Twitter Bootstrap
+gem 'bootstrap-sass', '~> 3.2.0.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
-# Use Unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-gem 'capistrano', '~> 3.1', group: :development
-gem 'capistrano-rails', group: :development
-gem 'capistrano-passenger', '< 0.0.5', group: :development
-gem 'capistrano-rbenv', group: :development
+group :development do
+	# Use Capistrano for deployment
+	gem 'capistrano', '~> 3.1'
+	gem 'capistrano-rails'
+	gem 'capistrano-passenger', '< 0.0.5'
+	gem 'capistrano-rbenv'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
-
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  gem 'better_errors'
 end
 
