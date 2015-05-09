@@ -79,3 +79,60 @@ p {
 	font-size: 1.1em;
 	line-height: 1.7em;
 }
+
+/*
+  Header
+*/
+
+#logo {
+	float: left;
+	margin-right: 10px;
+	font-size: 1.7em;
+	color: $white;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	padding-top: 9px;
+	font-weight: bold;
+	&:hover {
+		color: $white;
+		text-decoration: none;
+	}
+}
+
+/*
+  Forms
+*/
+
+input, textarea, select, .uneditable-input {
+	border: 1px solid #bbb;
+	width: 100%;
+	margin-bottom: 15px;
+	// The box-sizing CSS property is used to alter 
+	// the default CSS box model used to calculate 
+	// widths and heights of elements. It is possible 
+	// to use this property to emulate the behavior 
+	// of browsers that do not correctly support the 
+	// CSS box model specification.
+	@include box_sizing;
+}
+
+input {
+	// The !important qualifier overrides a more 
+	// specific element style. Considered bad form.
+	height: auto !important;
+}
+
+#error_explanation {
+	color: red;
+	ul {
+		color: red;
+		margin: 0 0 30px 0;
+	}
+}
+
+.field_with_errors {
+	@extend .has-error;
+	.form-control {
+		color: $state-danger-text;
+	}
+}

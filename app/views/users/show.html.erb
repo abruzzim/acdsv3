@@ -1,0 +1,22 @@
+<%= provide(:title, @user.name) %>
+<div class="row">
+	<!--
+	The HTML <aside> element represents a section of the page 
+	with content connected tangentially to the rest, which could 
+	be considered separate from that content.
+	-->
+	<aside class="col-md-5">
+		<!--
+		The HTML Section Element (<section>) represents a generic 
+		section of a document, i.e., a thematic grouping of content, 
+		typically with a heading. Each <section> should be identified, 
+		typically by including a heading (h1-h6 element) as a child 
+		of the <section> element.
+		-->
+		<section class="user_info">
+			<h1>
+				<%= @user.name %>
+			</h1>
+		</section>
+	</aside>
+</div>
