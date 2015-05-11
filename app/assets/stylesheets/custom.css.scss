@@ -100,6 +100,34 @@ p {
 }
 
 /*
+  Footer
+*/
+
+footer {
+	margin-top: 45px;
+	padding-top: 5px;
+	border-top: 1px solid $medium-light-gray;
+	color: #117777;
+	a {
+		color: $gray;
+		&:hover {
+			color: $dark-gray;
+		}
+	}
+	small {
+		float: left;
+	}
+	ul {
+		float: right;
+		list-style: none;
+		li {
+			float: left;
+			margin-left: 15px;
+		}
+	}
+}
+
+/*
   Forms
 */
 
