@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
-  root   'static_pages#home'
-  get    'asthmaticus' => 'static_pages#asthmaticus'
-  get    'dka'         => 'static_pages#dka'
-  get    'epilepticus' => 'static_pages#epilepticus'
-  get    'sepsis'      => 'static_pages#sepsis'
-  get    'tbi'         => 'static_pages#tbi'
+  get 'guidelines/sepsis'
+
+  root                    'static_pages#home'
+  get    'asthmaticus' => 'guidelines#asthmaticus'
+  get    'dka'         => 'guidelines#dka'
+  get    'epilepticus' => 'guidelines#epilepticus'
+  get    'sepsis'      => 'guidelines#sepsis'
+  get    'tbi'         => 'guidelines#tbi'
   get    'signup'      => 'users#new'
   get    'login'       => 'sessions#new'
   post   'login'       => 'sessions#create'
