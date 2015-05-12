@@ -128,6 +128,41 @@ footer {
 }
 
 /*
+  Debugging
+*/
+
+.debug_dump {
+	// The clear CSS property specifies whether 
+	// an element can be next to floating elements 
+	// that precede it or must be moved down 
+	// (cleared) below them.
+	clear: both;
+	// The float CSS property specifies that an 
+	// element should be taken from the normal flow 
+	// and placed along the left or right side of 
+	// its container, where text and inline elements 
+	// will wrap around it. A floating element is one 
+	// where the computed value of float is not none.
+	float: left;
+	// The width CSS property specifies the width of 
+	// the content area of an element. The content 
+	// area is inside the padding, border, and margin 
+	// of the element.
+	width: 100%;
+	// The margin-top CSS property of an element sets 
+	// the margin space required on the top of an 
+	// element. A negative value is also allowed.
+	margin-top: 45px;
+	// The box-sizing CSS property is used to alter 
+	// the default CSS box model used to calculate 
+	// widths and heights of elements. It is possible 
+	// to use this property to emulate the behavior 
+	// of browsers that do not correctly support the 
+	// CSS box model specification.
+	@include box_sizing;
+}
+
+/*
   Forms
 */
 

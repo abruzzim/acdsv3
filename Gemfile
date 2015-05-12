@@ -26,6 +26,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.2.0.0'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
+# Add Reveal to the Rails Asset Pipeline
+# gem 'rails-reveal-js', '~> 2.6'
 
 group :development do
 	# Use Capistrano for deployment
