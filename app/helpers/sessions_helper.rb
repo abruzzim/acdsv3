@@ -54,7 +54,7 @@ module SessionsHelper
 			# ...then find the user in the database,
 			user = User.find_by(id: user_id)
 			# If the user exists and the remember token matches the digest...
-			if (user && user.authenticate?(cookies[:remember_token]))
+			if (user && user.authenticated?(cookies[:remember_token]))
 				# ... then log the user in,
 				log_in user
 				# ...and memoize the current user in an instance variable.
