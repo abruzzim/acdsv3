@@ -15,7 +15,7 @@ class SessionsController < ApplicationController
   		#...and remember the logged in user,
   		remember user
   		# and redirect to the user's show page;
-  		redirect_to user
+  		redirect_to root_url
   	else
   		#...else display a temp error message,
   		flash.now[:danger] = "%SESSIONS_CONTROLLER-E-INVALID, Invalid email/password combination."
