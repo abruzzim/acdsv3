@@ -12,14 +12,6 @@
 				<%= link_to("AdvancedCDS", root_path, class: "navbar-brand") %>
 			</div> <!-- .navbar-header -->
 
-			<% if params[:controller] == "guidelines" && params[:action] == "sepsis" %>
-				<% puts "%_HEADER-I-TRACE, Adding Countdown.JS timers." %>
-				<div>
-					<div class="nav navbar-nav" id="navBarElapsed"></div>
-					<div class="nav navbar-nav" id="navBarTimeToTask"></div>
-				</div>
-			<% end %>
-
 			<div class="collapse navbar-collapse" id="navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
 					<li><%= link_to("Home", root_path) %></li>

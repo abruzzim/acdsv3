@@ -35,6 +35,7 @@ html {
 
 body {
 	padding-top: 150px;
+	padding-bottom: 80px;
 }
 
 section {
@@ -220,17 +221,14 @@ input {
 */
 
 .is-countdown {
-	margin: 0px 5px;
 }
 
 #navBarElapsed {
 	text-align: center;
-	background-color: $bs-bg-warning-yellow;
 }
 
 #navBarTimeToTask {
 	text-align: center;
-	background-color: $bs-bg-warning-yellow;
 }
 
 /*

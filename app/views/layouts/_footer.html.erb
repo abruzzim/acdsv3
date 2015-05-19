@@ -1,4 +1,27 @@
 <footer class="footer">
+
+	<% if params[:controller] == "guidelines" && params[:action] == "sepsis" %>
+		<% puts "%_FOOTER-I-TRACE, Adding Countdown.JS timers." %>
+		<div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+			<div class="container-fluid">
+				<div class="btn-group" role="group" aria-label="timers">
+					<button class="btn btn-default" type="button"><div id="navBarElapsed"></div></button>
+					<button class="btn btn-default" type="button"><div id="navBarTimeToTask"></div></button>
+				</div><!-- /.btn-group -->
+				<div class="btn-group" role="group" aria-label="take-tasks">
+					<button class="btn btn-default" type="button">VS</button>
+					<button class="btn btn-default" type="button">Labs</button>
+					<button class="btn btn-default" type="button">BP</button>
+				</div><!-- /.btn-group -->
+				<div class="btn-group" role="group" aria-label="give-tasks">
+					<button class="btn btn-default" type="button">IVf</button>
+					<button class="btn btn-default" type="button">Meds</button>
+					<button class="btn btn-default" type="button">ABx</button>
+				</div><!-- /.btn-group -->
+			</div><!-- /.container-fluid -->
+		</div><!-- /.navbar navbar-default -->
+	<% end %>
+
 	<p><small><a href="http://www.framework-solutions.com"><b>Framework Solutions, LLC</b>, developing software one cup of coffee at a time.</a></small></p>
 	<nav>
 		<ul>
