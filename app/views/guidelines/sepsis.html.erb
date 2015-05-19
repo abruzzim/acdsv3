@@ -1,8 +1,8 @@
 <%= provide(:title, "Sepsis Protocol") %>
 <div class="row">
-	<div class="col-xs-offset-1 col-xs-10">
-
+	<div class="col-xs-12 col-md-offset-1 col-md-10">
 		<div class="container-fluid">
+
 			<div class="jumbotron">
 				<div class="row">
 					<div class="col-xs-offset-1 col-xs-10">
@@ -15,21 +15,35 @@
 					</div><!-- /.col-xs-offset-10 .col-xs-10 -->
 				</div><!-- /.row -->
 			</div><!-- /.jumbotron -->
-		</div><!-- /.container-fluid -->
 
-		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="thumbnail">
 						<div class="caption">
-							<h2>Do Not Miss</h2>
+			        <div class="panel panel-danger">
+			        	<div class="panel-heading">
+			        		<h1>Do Not Miss</h1>
+			        	</div><!-- /.panel-heading -->
+			        	<div class="panel-body do-not-miss">
+			        		<div class="alert alert-warning">
+			        			<p>Initially, pediatric patients present with:</p>
+			        			<ul>
+			        				<li>Low or high temperature</li>
+			        				<li>Tachycardia</li>
+			        				<li>Altered mental status</li>
+			        				<li>Poor perfusion or flash capillary refill</li>
+			        			</ul>
+			        		</div><!-- /.alert .alert-warning -->
+			        		<div class="alert alert-warning">
+			        			<p>Hypotension is a LATE finding.</p>
+			        		</div><!-- /.alert .alert-warning -->
+			        	</div><!-- /.panel-body .do-not-miss -->
+			        </div><!-- /.panel .panel-danger -->
 						</div><!-- /.caption -->
 					</div><!-- /.thumbnail -->
 				</div><!-- /.col-xs-12  -->
 			</div><!-- /.row -->
-		</div><!-- /.container-fluid -->
 
-		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="thumbnail">
@@ -57,13 +71,16 @@
 					</div><!-- /.thumbnail -->
 				</div><!-- /.col-xs-12  -->
 			</div><!-- /.row -->
-		</div><!-- /.container-fluid -->
 
-		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="thumbnail">
 						<div class="caption">
+
+			        <section id="sepsis-pediatric-treatment-bundle">
+								<h1 style="text-align:left">Sepsis Pediatric Treatment Bundle</h1>
+			        </section><!-- /#sepsis-pediatric-treatment-bundle -->
+
 			        <section id="period-zero">
 								<h1 style="text-align:left">&quotTime Zero&quot</h1>
 								<p>The first point at which anyone considers that a child might be septic.</p>
@@ -137,52 +154,52 @@
 				        	<div class="panel-body">
 										<p><small>For Reference Only - based on guidelines at Children's Hospital Research Center Oakland and on international pediatric sepsis consensus conference: Definitions for sepsis and organ dysfunction in pediatrics Pediatr Crit Care Med 2005 Vol. 6, No. 1</small></p>
 				        	</div><!-- /.panel-body -->
-										<table class="table">
-											<tr>
-												<td style="background-color:#3a69a6; color:#fff">1</td>
-												<td>
-													<p><small>Two of the following (one must be TEMP or WBC):</small></p>
-													<ul>
-														<li>TEMP &gt 38.5 of &lt 36</li>
-														<li>WBC as per <a href="#assessment-vital-signs-table">table</a> below.</li>
-														<li>HR as per <a href="#assessment-vital-signs-table">table</a> below.</li>
-														<li>RR as per <a href="#assessment-vital-signs-table">table</a> below.</li>
-														<li><span style="color:red">If YES</span> then <span style="color:red">SIRS</li>
-													</ul>
-												</td>
-											</tr>
-											<tr>
-												<td style="background-color:#3a69a6; color:#fff">2</td>
-												<td>
-													<ul>
-														<li>Infection suspected?</li>
-														<li><span style="color:red">If YES</span> then <span style="color:red">SEPSIS</span></li>
-													</ul>
-												</td>
-											</tr>
-											<tr>
-												<td style="background-color:#3a69a6; color:#fff">3</td>
-												<td>
-													<ul>
-														<li>End-organ dysfuntion? (See table below)</li>
-														<li><span style="color:red">If YES</span> then <span style="color:red">SEVERE SEPSIS</span></li>
-														<li>Call MD immediately.</li>
-														<li>Consider sending labs.</li>
-														<li><a href="#period-one">START SEVERE SEPSIS GUIDLINE IMMEDIATELY!</a></li>
-													</ul>
-												</td>
-											</tr>
-											<tr>
-												<td style="background-color:#3a69a6; color:#fff">4</td>
-												<td>
-													<ul>
-														<li>Hypotention?</li>
-														<li><span style="color:red">If YES</span> then <span style="color:red">SEPTIC SHOCK</li>
-														<li><a href="#period-one">START SEVERE SEPSIS GUIDLINE IMMEDIATELY!</a></li>
-													</ul>
-												</td>
-											</tr>
-										</table><!-- /.table -->
+									<table class="table">
+										<tr>
+											<td style="background-color:#3a69a6; color:#fff">1</td>
+											<td>
+												<p><small>Two of the following (one must be TEMP or WBC):</small></p>
+												<ul>
+													<li>TEMP &gt 38.5 of &lt 36</li>
+													<li>WBC as per <a href="#assessment-vital-signs-table">table</a> below.</li>
+													<li>HR as per <a href="#assessment-vital-signs-table">table</a> below.</li>
+													<li>RR as per <a href="#assessment-vital-signs-table">table</a> below.</li>
+													<li><span style="color:red">If YES</span> then <span style="color:red">SIRS</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<td style="background-color:#3a69a6; color:#fff">2</td>
+											<td>
+												<ul>
+													<li>Infection suspected?</li>
+													<li><span style="color:red">If YES</span> then <span style="color:red">SEPSIS</span></li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<td style="background-color:#3a69a6; color:#fff">3</td>
+											<td>
+												<ul>
+													<li>End-organ dysfuntion? (See table below)</li>
+													<li><span style="color:red">If YES</span> then <span style="color:red">SEVERE SEPSIS</span></li>
+													<li>Call MD immediately.</li>
+													<li>Consider sending labs.</li>
+													<li><a href="#period-one">START SEVERE SEPSIS GUIDLINE IMMEDIATELY!</a></li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<td style="background-color:#3a69a6; color:#fff">4</td>
+											<td>
+												<ul>
+													<li>Hypotention?</li>
+													<li><span style="color:red">If YES</span> then <span style="color:red">SEPTIC SHOCK</li>
+													<li><a href="#period-one">START SEVERE SEPSIS GUIDLINE IMMEDIATELY!</a></li>
+												</ul>
+											</td>
+										</tr>
+									</table><!-- /.table -->
 				        </div><!-- /.panel .panel-info -->
 			        </section><!-- /#assessment-tool -->
 
@@ -192,66 +209,66 @@
 										<p>Rapid Sepsis Assessment Vital Signs Table</p>
 				        	</div><!-- /.panel-heading -->
 				        	<div class="panel-body">
-										<p><small>For Reference Only - based on guidelines at Children's Hospital Research Center Oakland and on international pediatric sepsis consensus conference: Definitions for sepsis and organ dysfunction in pediatrics Pediatr Crit Care Med 2005 Vol. 6, No. 1</small></p>
+										<p><small>For Reference Only - based on guidelines at Children's Hospital Research Center Oakland</small></p>
 				        	</div><!-- /.panel-body -->
-										<table class="table">
-											<tr>
-												<th>Age Group</th>
-												<th>WBC</th>
-												<th>Tachy-cardia</th>
-												<th>Brady-cardia</th>
-												<th>Resp. Rate</th>
-												<th>Systolic BP</th>
-											</tr>
-											<tr>
-												<td nowrap>0d - 1wk</td>
-												<td nowrap>&gt 34</td>
-												<td>&gt 180</td>
-												<td>&lt 100</td>
-												<td>&gt 50</td>
-												<td>&lt 65</td>
-											</tr>
-											<tr>
-												<td nowrap>1wk - 1mo</td>
-												<td nowrap>&gt 19.5 or &lt 5</td>
-												<td>&gt 180</td>
-												<td>&lt 100</td>
-												<td>&gt 40</td>
-												<td>&lt 75</td>
-											</tr>
-											<tr>
-												<td nowrap>1mo - 24mo</td>
-												<td nowrap>&gt 17.5 or &lt 5</td>
-												<td>&gt 180</td>
-												<td>&lt 90</td>
-												<td>&gt 34</td>
-												<td>&lt 100</td>
-											</tr>
-											<tr>
-												<td nowrap>2 - 5yrs</td>
-												<td nowrap>&gt 15.5 or &lt 6</td>
-												<td>&gt 140</td>
-												<td>na</td>
-												<td>&gt 22</td>
-												<td>&lt 94</td>
-											</tr>
-											<tr>
-												<td nowrap>6 - 12yrs</td>
-												<td nowrap>&gt 13.5 or &lt 4.5</td>
-												<td>&gt 130</td>
-												<td>na</td>
-												<td>&gt 18</td>
-												<td>&lt 105</td>
-											</tr>
-											<tr>
-												<td nowrap>13 - &lt18yrs</td>
-												<td nowrap>&gt 11 or &lt 4.5</td>
-												<td>&gt 110</td>
-												<td>na</td>
-												<td>&gt 14</td>
-												<td>&lt 117</td>
-											</tr>
-										</table>
+									<table class="table">
+										<tr>
+											<th>Age Group</th>
+											<th>WBC</th>
+											<th>Tachy-cardia</th>
+											<th>Brady-cardia</th>
+											<th>Resp. Rate</th>
+											<th>Systolic BP</th>
+										</tr>
+										<tr>
+											<td nowrap>0d - 1wk</td>
+											<td nowrap>&gt 34</td>
+											<td>&gt 180</td>
+											<td>&lt 100</td>
+											<td>&gt 50</td>
+											<td>&lt 65</td>
+										</tr>
+										<tr>
+											<td nowrap>1wk - 1mo</td>
+											<td nowrap>&gt 19.5 or &lt 5</td>
+											<td>&gt 180</td>
+											<td>&lt 100</td>
+											<td>&gt 40</td>
+											<td>&lt 75</td>
+										</tr>
+										<tr>
+											<td nowrap>1mo - 24mo</td>
+											<td nowrap>&gt 17.5 or &lt 5</td>
+											<td>&gt 180</td>
+											<td>&lt 90</td>
+											<td>&gt 34</td>
+											<td>&lt 100</td>
+										</tr>
+										<tr>
+											<td nowrap>2 - 5yrs</td>
+											<td nowrap>&gt 15.5 or &lt 6</td>
+											<td>&gt 140</td>
+											<td>na</td>
+											<td>&gt 22</td>
+											<td>&lt 94</td>
+										</tr>
+										<tr>
+											<td nowrap>6 - 12yrs</td>
+											<td nowrap>&gt 13.5 or &lt 4.5</td>
+											<td>&gt 130</td>
+											<td>na</td>
+											<td>&gt 18</td>
+											<td>&lt 105</td>
+										</tr>
+										<tr>
+											<td nowrap>13 - &lt18yrs</td>
+											<td nowrap>&gt 11 or &lt 4.5</td>
+											<td>&gt 110</td>
+											<td>na</td>
+											<td>&gt 14</td>
+											<td>&lt 117</td>
+										</tr>
+									</table>
 				        </div><!-- /.panel .panel-info -->
 			        </section><!-- /#assessment-vital-signs-table -->
 
@@ -261,28 +278,29 @@
 										<p>Assessment End-Organ Criteria Table</p>
 				        	</div><!-- /.panel-heading -->
 				        	<div class="panel-body">
-										<p><small>For Reference Only - based on guidelines at Children's Hospital Research Center Oakland and on international pediatric sepsis consensus conference: Definitions for sepsis and organ dysfunction in pediatrics Pediatr Crit Care Med 2005 Vol. 6, No. 1</small></p>
+										<p><small>For Reference Only - based on guidelines at Children's Hospital Research Center Oakland</small></p>
 				        	</div><!-- /.panel-body -->
-										<table class="table">
-											<tr>
-												<td><b>End-Organ Dysfuntion</b></td>
-												<td>
-													<ul>
-														<li>Lethargic, irritable, altered mental status (not just cranky) <b>OR</b></li>
-														<li>Poor perfusion (CRT &gt 3 secs) <b>OR</b></li>
-														<li>Decreased urine output (&lt 0.5 mL/kg/hr) <b>OR</b></li>
-														<li>ANY bilateral infiltrates on CXR and need for oxygen.</li>
-													</ul>
-												</td>
-											</tr>
-										</table><!-- /.table -->
+									<table class="table">
+										<tr>
+											<td><b>End-Organ Dysfuntion</b></td>
+											<td>
+												<ul>
+													<li>Lethargic, irritable, altered mental status (not just cranky) <b>OR</b></li>
+													<li>Poor perfusion (CRT &gt 3 secs) <b>OR</b></li>
+													<li>Decreased urine output (&lt 0.5 mL/kg/hr) <b>OR</b></li>
+													<li>ANY bilateral infiltrates on CXR and need for oxygen.</li>
+												</ul>
+											</td>
+										</tr>
+									</table><!-- /.table -->
 				        </div><!-- .panel .panel-info -->
 			        </section><!-- /#assessment-end-organ-criteria-table -->
+
 						</div><!-- /.caption -->
 					</div><!-- /.thumbnail -->
 				</div><!-- /.col-xs-12 -->
 			</div><!-- /.row -->
-		</div><!-- /.container-fluid -->
 
-	</div> <!-- /.col-xs-offset-1 .col-xs-10 -->
+		</div><!-- /.container-fluid -->
+	</div> <!-- /.col-xs-12 .col-sm-offset-1 .col-sm-10 -->
 </div> <!-- /.row -->

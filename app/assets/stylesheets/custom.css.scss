@@ -8,11 +8,12 @@
   Sass Variables and Mixins
 */
 
-$white:             #fff;
-$dark-gray:         #222;
-$gray:              #555;
-$light_gray:        #777;
-$medium-light-gray: #eaeaea;
+$white:                #fff;
+$dark-gray:            #222;
+$gray:                 #555;
+$light_gray:           #777;
+$medium-light-gray:    #eaeaea;
+$bs-bg-warning-yellow: #fcf8e4;
 
 // Allows a group of CSS rules to be packaged 
 // up and used for multiple elements.
@@ -33,7 +34,7 @@ html {
 }
 
 body {
-	padding-top: 90px;
+	padding-top: 150px;
 }
 
 section {
@@ -212,4 +213,30 @@ input {
 #session_remember_me {
 	width: auto;
 	margin-left: 0;
+}
+
+/*
+  Countdown JS Timer
+*/
+
+.is-countdown {
+	margin: 0px 5px;
+}
+
+#navBarElapsed {
+	text-align: center;
+	background-color: $bs-bg-warning-yellow;
+}
+
+#navBarTimeToTask {
+	text-align: center;
+	background-color: $bs-bg-warning-yellow;
+}
+
+/*
+  Guideline Do Not Miss Styling
+*/
+
+.do-not-miss {
+	font-size: 150%;
 }
